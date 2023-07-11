@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="images/Logo2.png">
+  <title>Dancer Society</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="bootstrap.css">
+  <!-- Googlefont Link -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200;0,300;0,400;1,200;1,300&display=swap" rel="stylesheet"> 
+  <style>
+
+body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+    }
+
+    header {
+      border-radius: 30px;
+    }
+
+
+    .nav {
+      background-color: #f8f9fa;
+      box-shadow: 0 2px 4px 0 rgba(0,0,0,.2)
+    }
+    .nav-item{
+      margin-left:65px;
+      margin-right: 65px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      position: center;
+    }
+
+    @media (max-width: 576px) {
+     .nav-item {
+      margin-left: 10px;
+      margin-right:10px ;
+      }
+    }
+
+    .nav-item  .btn
+    {
+      color:#EEF4FD;
+      background-color: #084BB8;
+      margin-top: 3px;
+
+    }
+
+    @media (max-width: 576px) {
+     .nav-item .btn{
+      font-size: 0.8rem;
+      }
+    }
+
+    .nav-item a {
+      color:#EEF4FD;
+      background-color: #084BB8;
+    }
+
+    .centerlink {
+      max-width: 47px;
+      max-height: 47px; 
+      border-radius: 10px;
+    } 
+
+
+    .jumbotron .btn {
+      stroke: #f8f9fa;
+    }
+
+    @media (max-width: 576px) {
+     .jumbotron .btn {
+      margin-top: 20px;
+font-size: 0.85rem;
+      }
+    }
+
+    
+    .section {
+      border-radius: 20px;
+      background-color: #EEF4FD;
+      margin-bottom: 30px;
+      padding-left: 15%;
+      padding-right: 15%;
+      padding-bottom: 5%;
+      padding-top: 20px;
+      box-shadow: #0A0606;
+
+  
+    }
+    @media (max-width: 576px) {
+    .section  {
+      margin-right: 10px;
+      margin-left: 10px;
+     }
+    }
+
+    .section-title {
+      margin-bottom: 5.5%;
+      margin-top: 2%;
+      text-underline-position: under;
+    }
+
+    .section img {
+      padding-left: 0%;
+      padding-right: 0%;
+      margin: auto;
+    }
+
+    section h2 {
+text-underline-position: below;
+text-decoration: underline;
+color: #084BB8;
+}
+
+@media (max-width: 576px) {
+     .section h2 p {
+      font-size: 1.2rem;
+        padding-bottom: 10px;
+      }
+    }
+
+    .section h4 {
+font-size: 1.4rem;
+padding:5%
+    } 
+
+@media (max-width: 576px) {
+     .section h4 {
+      font-size: 1rem;
+        padding-bottom: 10px;
+      }
+    }
+
+
+
+  .lilpadding {
+      padding-left: 35%;
+      padding-right: 35%;
+
+      padding: 10px;
+    }
+    .card-padding
+    {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+
+
+
+
+    
+    .jumbotron {
+      background-color: #0000;
+      background-image:url(images/Gradientbackdrop.png);
+      background-size: 100% 98.5%;
+      background-position: 0 0;
+      color: white;
+      padding: 2rem;
+      border-bottom-right-radius: 35px;
+      border-bottom-left-radius: 35px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      border-radius: 30px;
+    }
+
+    .jumbotron .btn{
+      outline-style: solid;
+      
+    }
+    .jumbo-container {
+      padding-left: 10%;
+      padding-right: 10%;
+      padding-bottom: 10%;
+      padding-top: 20px;
+      border-radius: 30px;
+    }
+
+    .jumbotron h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+      padding-bottom: 20px;
+      padding-top: 20px;
+      margin: 10px;
+    }
+
+    @media (max-width: 576px) {
+      .jumbotron h1 {
+        font-size: 1.75rem;
+      }
+    }
+
+    h2{
+      text-underline-position: under;
+      margin: 10px;
+    }
+
+    .jumbotron h3 {
+      font-size: 1.75rem;
+      padding-bottom: 20px;
+    }
+    @media(max-width: 576px) {
+      .jumbotron h3 {
+        font-size: 1rem;
+        padding-bottom: 10px;
+      }
+    }
+
+
+
+    .h4{
+      font-size: 1.25;
+      padding-top: 10px;
+    }    
+    
+
+
+    .jumbotron h5 {
+      font-size: 1.2rem;
+  
+      padding-bottom:20px;
+      margin-left:10%;
+      margin-right:10%; 
+      margin-top:20px;
+    }
+
+    @media (max-width: 576px) {
+      .jumbotron h5 {
+        font-size: 1rem;
+        padding-bottom: 10px;
+        margin-left: 0%;
+        margin-right: 0%;
+      }
+    }
+
+  
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: 25px;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      max-width: 400px;
+    }
+
+
+
+
+    .submissionStatus {
+      padding-top: 30px;
+    }
+.altcard {
+    border: 2px solid #084BB8;
+  border-radius: 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding-right: 5%;
+  padding-left: 5%;
+  margin: 5%;
+}
+
+  @media (max-width: 576px) {
+    .altcard {
+      margin: 10%;
+    }
+
+  }
+
+    .card-img-container {
+  padding: 10px;
+  text-align: center;
+  
+                        }
+
+.card-img-top {
+max-width: 75%;
+
+.form {
+      margin-right:20%;
+      margin-left:20%;
+      margin-top: 5%;
+      padding :10px;
+      border: #084BB8;
+
+    }
+
+
+    @media (max-width: 576px) {
+      .form {
+max-width: 80%;
+      }
+    }
+
+ .form-group {
+ padding-top: 10px;
+
+ }
+
+.container form {
+margin-left: 30%;
+margin-right:30%;
+}
+
+@media (max-width: 576px) {
+.container form {
+margin-left: 10%;
+margin-right:10%;
+}
+}
+
+
+form .h3 {
+  text-align: center;
+
+}
+.form-title {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.form .btn {
+  margin-top: 20px;
+}
+
+
+
+}
+
+
+
+  </style>
+</head>
+<body>
+  
+  <!--Navbar Start-->
+  <ul class="nav justify-content-center fixed-top">
+
+    <li class="nav-item">
+      <a href="#join-form" type="button" class="btn ">Sign Up</a>
+
+    </li>
+
+    <li class="nav-item centerlink">
+      <a href = "https://www.dancersociety.com">
+      <image class= "centerlink"  src="images/Logo5.png"></image>
+    </a>
+    </li>
+
+
+       <li class="nav-item">
+        <a href ="mailto:aaron@dancersociety.com" type="button" class="btn ">Contact</a>
+    </li>
+
+
+  </ul>
+<!--Navbar end-->
+
+<!--Jumbotron-->
+<div class= "jumbo-container">
+<header  class="jumbotron jumbotron-fluid shadow">
+    <div class="container text-center">
+      <!--Top of the page, title and tagline-->
+      
+      <h1 class="display-4">Dancer Society</h1>
+      
+      <h3>Bridging the Gap Between Professional Dancers & 
+        Paid Opportunities</h3>
+      
+      <!--Start Jumbotron image array-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 image-fluid">
+            <div class="image-container ">
+              <img src = "images/IMG_0706.JPG"></image>
+            </div>  
+          </div>
+          <div class="col-md-4 image-fluid">
+            <div class="image-container">
+              <img src = "images/IMG_0721.JPG"></image>
+            </div>
+          </div>
+          <div class="col-md-4 image-fluid">   
+            <div class="image-container ">
+              <img src = "images/IMG_0740.JPG"></image>
+            </div>
+          </div>     
+        </div>
+      </div>
+     <!--End of Jumbotron image array-->   
+            
+       
+      <h5> Welcome to the social network by dancers for dancers. We are the only professional marketplace and networking app dedicated to Dance; connecting both talent and talent seekers.
+      </h5>
+      <h5>
+        Click the link below to submit your contact information to create your profile to be ready for our upcoming launch!
+      </h5>
+    
+      <a href="#join-form" class="btn btn-primary btn-lg rounded-pill">Create your profile</a>
+    </div>
+</header>
+</div> 
+
+<!--Dancer Section-->
+
+<section id="Dancer Section" class="container section shadow">
+  <div class = "display">
+    <h2 class="section-title text-center"> <p>DANCERS, WELCOME HOME</p></h2>
+  </div>  
+  <div class="container section-container">
+      <div class="row justify-content-around">
+        <div class="col-md-4">
+          <div class = "image-container  image-fluid">
+            <img src = "images/Whitagram-Image.JPG"></image>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h4>Search, Apply, and Connect directly with companies looking specifically for dancers. 
+            Stay up-to-date with classes and events in your local area.</h4>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-md-4">
+          <h4>Professional Dancers, looking to excel their career, now have a place to be in the know 
+            of paid gigs from teaching, choreography, and performance opportunities. Leave reviews for companies you’ve
+            worked with to exhibit how well they treat their talent and uphold a professional standard.</h4>
+          </div>
+        <div class="col-md-4">
+          <div class = "image-container image-fluid">
+            <img src = "images/IMG_0733.JPG"></image>
+          </div>
+        </div> 
+      </div>
+    </div>
+</section>
+<!--End Dancer Section-->
+
+<!--Dancer Card Array-->
+<div class="container card-padding">
+
+  <h3 class="section-title text-center">Featured Talent</h3>
+  <div class="row justify-content-center">
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class=" altcard">
+        <div class="card-img-container">
+          <img src="images\fProfile1.PNG" class="card-img-top rounded-circle" alt="Profile Image"> </img>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">August Cane</h5>
+          <p class="card-text text-center">San Francisco, CA</p>
+          <p class="card-text text-center">Style:</p>
+          <ul class="list-unstyled text-center">
+            <li>Contemporary</li>
+            <li>Tap</li>
+            <!-- Add more dance styles as needed -->
+          </ul>
+          <p class="card-text text-center">Opportunities:</p>
+          <ul class="list-unstyled text-center">
+            <li>Studio</li>
+            <li>Music Video</li>
+            <!-- Add more opportunities as needed -->
+          </ul>
+        </div>
+      </div>
+    </div>
+    <!-- Add more card elements as needed -->
+ 
+    <div class="col-sm-6 col-md-4 col-lg-3">
+     
+      <div class="altcard">
+        <div class="card-img-container">
+          <img src="images\fProfile2.PNG" class="card-img-top rounded-circle" alt="Profile Image"></img>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Leslie Salerno</h5>
+          <p class="card-text text-center">Washington, DC</p>
+          <p class="card-text text-center">Dance Styles:</p>
+          <ul class="list-unstyled text-center">
+            <li>Latin</li>
+            <li>Ballroom</li>
+            <!-- Add more dance styles as needed -->
+          </ul>
+          <p class="card-text text-center">Opportunities:</p>
+          <ul class="list-unstyled text-center">
+            <li>Opportunity 1</li>
+            <li>Opportunity 2</li>
+            <!-- Add more opportunities as needed -->
+          </ul>
+        </div>
+
+
+    </div>
+     </div>
+
+     
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <div class="altcard">
+        <div class="card-img-container">
+          <img src="images\fProfile3.PNG" class="card-img-top rounded-circle" alt="Profile Image"></img>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Dancer Name</h5>
+          <p class="card-text text-center">City, State</p>
+          <p class="card-text text-center">Dance Styles:</p>
+          <ul class="list-unstyled text-center">
+            <li>Dance Style 1</li>
+            <li>Dance Style 2</li>
+            <!-- Add more dance styles as needed -->
+          </ul>
+          <p class="card-text text-center">Opportunities:</p>
+          <ul class="list-unstyled text-center">
+            <li>Opportunity 1</li>
+            <li>Opportunity 2</li>
+            <!-- Add more opportunities as needed -->
+          </ul>
+        </div>
+
+        
+
+
+    </div>
+     </div>
+
+</div>
+</div>
+
+
+<!--Business section-->
+<section id="Companies Section" class="container section shadow">
+  <div class = "display">
+    <h2 class="section-title text-center"><p>TALENT SEEKERS, </p><p>LOOK NO FURTHER</p></h2>
+  </div>  
+  <div class="container section-container">
+      <div class="row justify-content-around">
+        <div class="col-md-4">
+          <div class = "image-container">
+            <img src = "images\2004C1DD-BD18-421B-9AEF-CEFCEBE79E09.JPG"></image>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <h4>Search, Hire, and Connect directly to dancers that fit the role you are looking for. 
+                           No more paying outrageous fees, scrambling through Social Media, 
+                           and running out of your personal network.</h4>
+          </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-md-4">
+          <h4> Companies, looking for professional dancers, can now search a database full of talent that can be filtered by style,
+                        location, types of opportunities, and pay grade. Event pages can be created to not only market directly to the dance 
+                         community, but also directly hire the perfect talent for that event.</h4>
+        </div>
+        <div class="col-md-4" >
+          <div class = "image-container section-image-container">
+            <img src = "images/performance1.JPG"></image>
+          </div>
+        </div> 
+      </div>
+    </div>
+</section>
+<!--End of Business Section-->
+<!--Form start-->
+<div class="container form" >
+  <h3 class ="form-title">CREATE YOUR PROFILE</h3>
+  <form id="profileForm"  action="https://formsubmit.co/aaron@dancersociety.com" method="POST">
+    <div class="form-group">
+      <label for="userType" id="join-form">Dancer or Company?</label>
+      <select class="form-control" id="userType">
+        <option value="Company">Dancer</option>
+        <option value="Dancer">Company</option>
+      </select>
+    </div>
+
+  <div class = "row"> 
+    <div class="form-group">
+      <label for="firstName">First Name</label>
+      <input type="text" class="form-control" id="firstName" name="firstName" required>
+    </div>
+    <div class="form-group">
+      <label for="lastName">Last Name</label>
+      <input type="text" class="form-control" id="lastName" name="lastName" required>
+    </div>
+  </div>   
+    <div class="form-group">
+      <label for="email">Email</label>
+      <input type="email" class="form-control" id="email" name="email" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone</label>
+      <input type="tel" class="form-control" id="phone" name="phone" required>
+    </div>
+    <div class="form-group">
+      <label for="city">City</label>
+      <input type="text" class="form-control" id="city" name="city" required>
+    </div>
+    <div class="form-group">
+      <label for="state">State</label>
+      <input type="text" class="form-control" id="state" name="state" required>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <p id="submissionStatus"></p>
+</div>
+
+</body>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.9/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  
+  <script>
+    // Disable form submission after the first submit
+    $(document).ready(function() {
+      $('#myForm').submit(function() {
+        $('button[type="submit"]').attr('disabled', true);
+      });
+    });
+  </script>
+  
+
+  </section>
